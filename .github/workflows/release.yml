@@ -25,7 +25,7 @@ jobs:
         uses: helm/chart-releaser-action@v1.6.0
         with:
           charts_dir: .
-          charts_config_file: ./Kong/charts.yaml
+          config: ./Kong/charts.yaml
           packages_with_index: true
         env:
           CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
